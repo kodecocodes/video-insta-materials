@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dpq-rx-hw1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17124"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Take Photo View Controller-->
+        <scene sceneID="c2f-oy-gIO">
+            <objects>
+                <viewController storyboardIdentifier="TakePhotoViewController" id="Dpq-rx-hw1" customClass="TakePhotoViewController" customModule="Petstagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FbR-9k-qyf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="KJm-A6-c4s">
+                                <rect key="frame" x="0.0" y="44" width="414" height="652"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWZ-vB-K3o">
+                                <rect key="frame" x="0.0" y="696" width="414" height="166"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cIE-nG-rm0">
+                                        <rect key="frame" x="158" y="34" width="98" height="98"/>
+                                        <state key="normal" image="take-photo"/>
+                                        <connections>
+                                            <action selector="shutterButtonTapped" destination="Dpq-rx-hw1" eventType="touchUpInside" id="W0x-18-KkA"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="cIE-nG-rm0" firstAttribute="centerY" secondItem="eWZ-vB-K3o" secondAttribute="centerY" id="4y8-ht-6gK"/>
+                                    <constraint firstItem="cIE-nG-rm0" firstAttribute="centerX" secondItem="eWZ-vB-K3o" secondAttribute="centerX" id="Fxg-gK-PeL"/>
+                                    <constraint firstAttribute="height" constant="166" id="VbL-hc-TwY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j49-WH-Jc6"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="KJm-A6-c4s" firstAttribute="top" secondItem="j49-WH-Jc6" secondAttribute="top" id="2fH-0s-2Yw"/>
+                            <constraint firstItem="eWZ-vB-K3o" firstAttribute="top" secondItem="KJm-A6-c4s" secondAttribute="bottom" id="IsC-zb-eaE"/>
+                            <constraint firstItem="KJm-A6-c4s" firstAttribute="trailing" secondItem="j49-WH-Jc6" secondAttribute="trailing" id="LOp-ie-dx1"/>
+                            <constraint firstItem="eWZ-vB-K3o" firstAttribute="leading" secondItem="j49-WH-Jc6" secondAttribute="leading" id="N4W-v1-a41"/>
+                            <constraint firstItem="eWZ-vB-K3o" firstAttribute="trailing" secondItem="j49-WH-Jc6" secondAttribute="trailing" id="XiP-ax-bHn"/>
+                            <constraint firstItem="KJm-A6-c4s" firstAttribute="leading" secondItem="j49-WH-Jc6" secondAttribute="leading" id="jd4-fc-Uln"/>
+                            <constraint firstItem="eWZ-vB-K3o" firstAttribute="bottom" secondItem="j49-WH-Jc6" secondAttribute="bottom" id="mml-iK-dPw"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="LuF-Zm-jkS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJD-Qt-msk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1692.753623188406" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="take-photo" width="98" height="98"/>
+    </resources>
+</document>

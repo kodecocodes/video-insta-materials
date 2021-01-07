@@ -1,0 +1,4 @@
+module hcapiplugin {
+    umbrella "/Users/jerrybeers/Dropbox/Projects/RW/HowToMakeAnApp/how-to-make-an-app-like/Student Materials/P03 Server/P03E02 Kitura materials/final/PetstagramAPI/.build/checkouts/omr-agentcore/src/hcapiplugin/include"
+    export *
+}

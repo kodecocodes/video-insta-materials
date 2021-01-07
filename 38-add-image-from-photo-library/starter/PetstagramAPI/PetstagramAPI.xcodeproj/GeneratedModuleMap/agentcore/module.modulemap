@@ -1,0 +1,4 @@
+module agentcore {
+    umbrella "/Users/jerrybeers/Dropbox/Projects/RW/HowToMakeAnApp/how-to-make-an-app-like/Student Materials/P03 Server/P03E08 Handling Authentication materials/final/PetstagramAPI/.build/checkouts/omr-agentcore/src/agentcore/include"
+    export *
+}

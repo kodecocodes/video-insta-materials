@@ -1,0 +1,3 @@
+.build/							usr/src/PetstagramAPI
+terraform/scripts/install.sh	usr/src/PetstagramAPI
+terraform/scripts/start.sh		usr/src/PetstagramAPI
